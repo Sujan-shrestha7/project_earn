@@ -1,0 +1,143 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(19, 18, 18);
+    background-size: cover;
+    background-position: center;
+}
+
+#particles-js{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+   top: 0;
+   left: 0;
+
+}
+
+#home{
+    position:relative;
+    font-size: 5em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 70px;
+    border: 2px solid rgb(18, 17, 17) ;
+    border-radius: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+    .navigation a{
+    position:relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 40px;
+}
+ .navigation a::after{
+    content: '';
+    position: absolute;
+    width: 105%;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .6s;
+ } 
+
+ .navigation a:hover::after {
+    transform-origin:left;
+    transform: scaleX(1);
+ }
+ .navigation .button{
+    font-size: 1.3em;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border-color: transparent;
+    align-items: center;
+ }
+.container{
+    margin-left: 100px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+ .body{
+    height: 210px;
+    width: 340px;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 100px;
+ }
+ .body a{
+    text-decoration: none;
+    color: #fff;
+ }
+.workBox{
+    border: 2px solid #fff;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.workBox tr th{
+    padding: 20px  105px;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+.workBox tr td{
+    padding: 20px  105px;
+}
+.workBox tr td button{
+   font-size: 1.3em;
+   background: transparent;
+   color: green;
+   outline: none;
+   border-color: transparent;
+   align-items: center;
+}

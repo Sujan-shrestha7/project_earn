@@ -1,0 +1,119 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(23, 23, 23);
+    background-size: cover;
+    background-position: center;
+}
+
+#particles-js{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+   top: 0;
+   left: 0;
+
+}
+
+#home{
+    position:relative;
+    font-size: 5em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background: black;
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navigation a{
+ position:relative;
+ font-size: 1.1em;
+ color: #fff;
+ text-decoration: none;
+ font-weight: 500;
+ margin: 40px;
+}
+ .navigation a::after{
+    content: '';
+    position: absolute;
+    width: 105%;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .6s;
+ } 
+
+ .navigation a:hover::after {
+    transform-origin:left;
+    transform: scaleX(1);
+ }
+ 
+.navigation .button{
+    background: transparent;
+    color: #fff;
+    font-size: 1.3em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: transparent;
+    cursor: pointer;
+}
+
+.wrapper{
+    position: absolute;
+    width: 280px;
+    height: 500px;
+    border: 2px solid rgba(118, 104, 104, 0.5);
+    border-radius: 10px;
+    margin-left: 1110px;
+    margin-bottom: 280px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(8, 7, 0.5);
+    transform: scale(0);
+    transition: transform .4s ease, height .2s ease;
+    background: rgb(58, 55, 55);
+    z-index: 1;
+    margin-left: 1380px;
+
+}
+
+.wrapper.active-popup{
+    transform: scale(1);
+}
