@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,25 +8,36 @@
     <link rel="stylesheet" href="project.css">
 </head>
 <body> 
+    
     <!-- heading navbar -->
 
     <header>
-        <a class="logo" href="index.html" >Kamau</a>
+        <a class="logo" href="index.html" >KamHau</a>
     <nav class="navigation">
-        <a href="khojau.html" >Khojau</a>
+        <a href="khojau.html" class="khojau">Khojau</a>
         <a href="rakhau.html" >Rakhau</a>
-        <a href="#">To Do List</a>
+        <a href="toDoList.html">To Do List</a>
         <button class="button"><ion-icon name="person-circle-outline"></ion-icon></button>
     </nav>
 </header>
 
-<div class="container">
-    <div class="box"></div>
-</div>
-
-<script src="script.js"></script>
-  <script type="text/javascript" src="js/particles.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+<!-- home section -->
+<section id="home" class="opening-page">
+    <div class="rakhau-box">
+        <form class="rakhau-form" action="">
+            <label for="">Work Type:</label>
+            <br><br>
+            <input type="text" class="rakhau-input" placeholder="add your task" required>
+            <br><br><br>
+            <label for="">Location:</label>
+            <br><br>
+            <input type="text" class="rakhau-input" placeholder="add your location" required>
+            <br><br>
+            <button class="rakhau-button" id="rakhau-button">Add Task</button>
+        </form>
+    </div>
+    <div class="wishes"> "You don't earn loyalty in <br> a  day. You earn loyalty <br>day-by-day."</div>
+</section>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

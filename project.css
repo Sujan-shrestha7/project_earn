@@ -12,32 +12,11 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: rgb(19, 18, 18);
+    background: rgb(23, 23, 23);
     background-size: cover;
     background-position: center;
 }
 
-#particles-js{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-   top: 0;
-   left: 0;
-
-}
-
-#home{
-    position:relative;
-    font-size: 5em;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-}
 header{
     position: fixed;
     top: 0;
@@ -93,12 +72,16 @@ header{
     outline: none;
     border-color: transparent;
     align-items: center;
+    cursor: pointer;
  }
+
+ /* kamHau opening page */
 .container{
-    margin-left: 100px;
-    margin-top: 20px;
+    margin-left: 175px;
+    margin-top: 30px;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
  .body{
     height: 210px;
@@ -117,6 +100,8 @@ header{
     text-decoration: none;
     color: #fff;
  }
+
+ /* khojau css */
 .workBox{
     border: 2px solid #fff;
     color: #fff;
@@ -141,3 +126,175 @@ header{
    border-color: transparent;
    align-items: center;
 }
+
+/* rakhau css */
+.rakhau-box{
+    position: fixed;
+    height: 330px;
+    width: 280px;
+    background-color: #332d2d;
+    border: px solid rgba(49, 45, 45, 0.5);
+    border-radius: 10%;
+    box-shadow: 0 0 30px rgba(8, 7, 0.5);
+}
+.wishes{
+    font-size: 50px;
+    margin-top: 55px;
+    margin-left: 370px;
+    color:#f2ecec;
+}
+
+.rakhau-form{
+    position: relative;
+    color: #f2ecec;
+    font-size: 1em;
+    margin-top: 40px;
+    padding-left: 20px;
+    font: 500;
+}
+
+.rakhau-input{
+    position: fixed;
+    flex: 2;
+    height: 35px;
+    width: 240px;
+    background: #c0b6b6;
+    outline: none;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.rakhau-input input{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #291818;
+    padding: 0 35px 0 5px;
+
+}
+
+.rakhau-box button{
+    position: fixed;
+    margin-left: 70px;
+    height: 32px;
+    width: 100px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    background-color: rgb(34, 34, 39);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(236, 236, 232);
+
+}
+
+
+/* to do list css */
+
+.toDoContainer{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(23, 23, 23);
+    padding-top: 40px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #363333;
+    margin: 100px auto 20px;
+    margin-top: 120px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px black;
+}
+.todo-app h2{
+    color: #011536;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.todo-app h2 img{
+
+    width: 35px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.toDoinput-box{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+.toDoButton{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:black;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgb(243, 239, 239);
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    color: #f2ecec;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+ul li::before{
+    position: absolute;
+    content: '';
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 6px;
+}
+ul li.done{
+    color:#111111;
+    text-decoration: line-through;
+}
+ ul li.done::before{
+    background-image: url(done.png);
+    
+ }
+
+ ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 70px;
+    height: 40px;
+    font-size: 22px;
+    color: #f2ecec;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+ }
+
+ ul li span:hover{
+    cursor: pointer;
+ }
